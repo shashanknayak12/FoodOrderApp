@@ -42,6 +42,8 @@ function AvailableMeals() {
                     {DUMMY_MEALS.map(eachMeal => {
                         return (
                             <MealItem
+                                id={eachMeal.id}
+                                key={eachMeal.id}
                                 name={eachMeal.name}
                                 description={eachMeal.description}
                                 price={eachMeal.price}

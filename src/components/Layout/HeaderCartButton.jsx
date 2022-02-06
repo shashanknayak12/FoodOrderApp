@@ -3,10 +3,12 @@ import CartIcon from './../Cart/CartIcon';
 import styles from './HeaderCartButton.module.css'
 
 
-function HeaderCartButton(props) {
+function HeaderCartButton({ onCartClick }) {
+
+
     return (
 
-        <button className={styles.button}>
+        <button className={styles.button} onClick={onCartClick}>
             <span className={styles.icon}>
                 <CartIcon />
             </span>
