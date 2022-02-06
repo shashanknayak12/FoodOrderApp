@@ -3,6 +3,7 @@ import './App.css';
 import Cart from './components/Cart/Cart';
 import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
+import CartProvider from './store/CartProvider';
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
     setIsCartOpen(false)
   }
   return (
-    <React.Fragment>
+    <CartProvider>
       {isCartOpen && <Cart onCloseCart={hideCartHandler} />}
 
       <Header onCartClick={showCartHandler} />
@@ -26,7 +27,7 @@ function App() {
         <Meals />
       </main>
 
-    </React.Fragment>
+    </CartProvider>
 
   );
 }
