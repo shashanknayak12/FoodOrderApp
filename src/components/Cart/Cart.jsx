@@ -12,10 +12,11 @@ function Cart({ onCloseCart }) {
 
 
     const cartItemRemovehandler = (id) => {
+        cartCtx.removeItem(id)
 
     }
     const cartItemAddhandler = (item) => {
-
+        cartCtx.addItem({ ...item, amount: 1 })
     }
 
 
