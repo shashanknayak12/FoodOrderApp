@@ -18,6 +18,13 @@
 	font-size: 1.5rem;
 }
 
+.mealsError {
+	text-align: center;
+	padding-top: 2rem;
+	color: red;
+	font-size: 2rem;
+}
+
 @keyframes meals-appear {
 	from {
 		opacity: 0;
