@@ -45,3 +45,14 @@
 	background-color: #8a2b06;
 	color: white;
 }
+
+.success {
+	font-weight: 500;
+	font-size: 1.2rem;
+	padding: 1.5rem;
+}
+.success span {
+	color: rgb(224, 74, 48);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
